@@ -1,0 +1,110 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: url('simply1.jpg') center/cover no-repeat;
+  height: 100vh;
+}
+
+.conteiner{
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.btns{
+  display: flex;
+  flex-direction: column;
+}
+.btns div{
+  display: flex;
+}
+
+.btns button{
+  font-size: 70px;
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  cursor: pointer;
+  outline: none;
+  transition: 0.5s;
+}
+.btns button:hover{
+  background: rgb(11, 1, 48);
+  color: bisque;
+}
+
+.wrap5 button{
+  width: 400px;
+  height: 80px;
+  border-radius: 0 0 7px 7px;
+  background: rgb(255, 52, 16);
+}
+input{
+  width: 400px;
+  height: 100px;
+  font-size: 40px;
+  padding: 0 20px;
+  border: 1px solid black;
+  border-radius: 7px 7px 0 0;
+  background: rgb(54, 54, 54);
+  color: white;
+  outline: none;
+}
+
+.btn-grey{
+  background: grey;
+}
+
+.btn-equal{
+  background: rgb(194, 194, 119);
+}
+.wrap1 button {
+  background: rgba(194, 250, 120, 0.658);
+}
+
+@media (max-width:800px){
+    .btns button{
+      width: 80px;
+      height: 80px;
+      font-size: 40px;
+    }
+    input, .wrap5 button{
+      width: 320px;
+      font-size: 28px;
+    }
+    .wrap5 button{
+      height: 70px;
+      font-size: 40px;
+    }
+    body{
+      height: 90vh;
+    }
+
+      
+}
+
+@media (max-width:400px){
+  .btns button{
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
+  input, .wrap5 button{
+    width: 160px;
+    font-size: 18px;
+    height: 60px;
+  }
+  .wrap5 button{
+    height: 35px;
+    font-size: 22px;
+  }
+ 
+    
+}
